@@ -12,7 +12,7 @@ Adds the PlayFab user, based on the `targetPlayfabId`, to the friend list of the
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyPlayfab.Friends.AddFriend("TargetPlayerID");
 ```
 
@@ -22,7 +22,7 @@ Removes a specified user from the friend list of the local user.
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyPlayfab.Friends.RemoveFriend("TargetPlayerID");
 ```
 
@@ -32,7 +32,7 @@ Updates the tag list for a specified user in the friend list of the local user.
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyPlayfab.Friends.SetFriendTag("TargetPlayerID", "tag1", "tag2");
 ```
 
@@ -48,7 +48,7 @@ Adds the user's virtual currency.
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyPlayfab.PlayerItemManagement.AddUserVirtualCurrency(100, "Gold");
 ```
 
@@ -58,7 +58,7 @@ Subtracts the user's virtual currency.
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyPlayfab.PlayerItemManagement.SubtractUserVirtualCurrency(50, "Gold");
 ```
 
@@ -68,7 +68,7 @@ Grants a PlayFab item to the player.
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyPlayfab.PlayerItemManagement.GrantItemToPlayer("ItemID123", "CatalogVersion", "PlayerID");
 ```
 
@@ -92,7 +92,7 @@ Updates the user's data.
 
 Example:
 
-```
+```csharp
 Dictionary<string, string> data = new Dictionary<string, string>
 {
     { "Key1", "Value1" },
@@ -128,6 +128,6 @@ Purchase an Oculus SKU securely.
 
 Example:
 
-```
+```csharp
 EasyUsages.EasyOculus.IAP.PurchaseSKU("YourSKU");
 ```
